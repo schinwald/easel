@@ -36,6 +36,10 @@ preset = {
 }
 
 
+def get_reset():
+    return "\x1b[0m"
+
+
 def get_foreground_color(color: str | None):
     if not color:
         return "\x1b[39m"
