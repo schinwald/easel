@@ -1,3 +1,5 @@
+![Logo](/logo.png)
+
 # Easel
 
 A terminal text highlighter that applies ANSI escape codes to input text based on regex patterns defined in TOML config files.
