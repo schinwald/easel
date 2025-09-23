@@ -1,0 +1,15 @@
+[patterns.commit_hash]
+pattern = "^[a-f0-9]{7,40}"
+foreground_color = "#FFA500"
+
+[patterns.author]
+pattern = "Author: .*"
+foreground_color = "#00FF00"
+
+[patterns.date]
+pattern = "Date: .*"
+foreground_color = "#0000FF"
+
+[patterns.message]
+pattern = "^    .*"
+foreground_color = "#FFFFFF"

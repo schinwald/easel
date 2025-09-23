@@ -1,0 +1,38 @@
+[patterns.error]
+pattern = "\\bERROR\\b"
+foreground_color = "#FF0000"
+attributes = "bold"
+
+[patterns.warn]
+pattern = "\\bWARN\\b"
+foreground_color = "#FFA500"
+
+[patterns.info]
+pattern = "\\bINFO\\b"
+foreground_color = "#00FF00"
+
+[patterns.debug]
+pattern = "\\bDEBUG\\b"
+foreground_color = "#808080"
+
+[patterns.trace]
+pattern = "\\bTRACE\\b"
+foreground_color = "#C0C0C0"
+
+[patterns.fatal]
+pattern = "\\bFATAL\\b"
+foreground_color = "#800080"
+attributes = "bold"
+
+[patterns.exception]
+pattern = "Exception|Error|TypeError|ReferenceError"
+foreground_color = "#FF0000"
+attributes = "bold"
+
+[patterns.stack_trace]
+pattern = "at .*"
+foreground_color = "#808080"
+
+[patterns.timestamp]
+pattern = "\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}"
+foreground_color = "#0000FF"

@@ -1,7 +1,0 @@
-[patterns.fox]
-pattern = "fox"
-foreground_color = "#FF0000"
-
-[patterns.dog]
-pattern = "dog"
-foreground_color = "#00FF00"

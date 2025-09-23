@@ -1,0 +1,29 @@
+[patterns.timestamp]
+pattern = "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}"
+foreground_color = "#808080"
+
+[patterns.level_error]
+pattern = "\\bERROR\\b"
+foreground_color = "#FF0000"
+attributes = "bold"
+
+[patterns.level_warn]
+pattern = "\\bWARN\\b"
+foreground_color = "#FFA500"
+
+[patterns.level_info]
+pattern = "\\bINFO\\b"
+foreground_color = "#00FF00"
+
+[patterns.level_debug]
+pattern = "\\bDEBUG\\b"
+foreground_color = "#808080"
+
+[patterns.exception]
+pattern = "Exception|Error|Traceback"
+foreground_color = "#FF0000"
+attributes = "bold"
+
+[patterns.ip_address]
+pattern = "\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b"
+foreground_color = "#0000FF"

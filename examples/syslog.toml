@@ -1,0 +1,33 @@
+[patterns.emerg]
+pattern = "<0>"
+foreground_color = "#FF0000"
+attributes = "bold,blink"
+
+[patterns.alert]
+pattern = "<1>"
+foreground_color = "#FF0000"
+attributes = "bold"
+
+[patterns.crit]
+pattern = "<2>"
+foreground_color = "#FF4500"
+
+[patterns.err]
+pattern = "<3>"
+foreground_color = "#FF0000"
+
+[patterns.warn]
+pattern = "<4>"
+foreground_color = "#FFA500"
+
+[patterns.notice]
+pattern = "<5>"
+foreground_color = "#00FF00"
+
+[patterns.info]
+pattern = "<6>"
+foreground_color = "#0000FF"
+
+[patterns.debug]
+pattern = "<7>"
+foreground_color = "#808080"

@@ -1,0 +1,51 @@
+[patterns.timestamp]
+pattern = "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}"
+foreground_color = "#808080"
+
+[patterns.container]
+pattern = "\\b[a-zA-Z0-9_-]+\\s+\\|"
+foreground_color = "#0000FF"
+
+[patterns.error]
+pattern = "\\bERROR\\b"
+foreground_color = "#FF0000"
+attributes = "bold"
+
+[patterns.warn]
+pattern = "\\bWARN\\b"
+foreground_color = "#FFA500"
+
+[patterns.info]
+pattern = "\\bINFO\\b"
+foreground_color = "#00FF00"
+
+[patterns.debug]
+pattern = "\\bDEBUG\\b"
+foreground_color = "#808080"
+
+[patterns.fatal]
+pattern = "\\bFATAL\\b"
+foreground_color = "#800080"
+attributes = "bold"
+
+[patterns.panic]
+pattern = "\\bPANIC\\b"
+foreground_color = "#FF0000"
+attributes = "bold,blink"
+
+[patterns.exception]
+pattern = "Exception|panic|runtime error"
+foreground_color = "#FF0000"
+attributes = "bold"
+
+[patterns.http_status_2xx]
+pattern = "\\b2[0-9]{2}\\b"
+foreground_color = "#00FF00"
+
+[patterns.http_status_4xx]
+pattern = "\\b4[0-9]{2}\\b"
+foreground_color = "#FFA500"
+
+[patterns.http_status_5xx]
+pattern = "\\b5[0-9]{2}\\b"
+foreground_color = "#FF0000"

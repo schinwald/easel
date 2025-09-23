@@ -1,0 +1,40 @@
+[patterns.get]
+pattern = "GET"
+foreground_color = "#00FF00"
+
+[patterns.post]
+pattern = "POST"
+foreground_color = "#FFA500"
+
+[patterns.put]
+pattern = "PUT"
+foreground_color = "#0000FF"
+
+[patterns.delete]
+pattern = "DELETE"
+foreground_color = "#FF0000"
+
+[patterns.head]
+pattern = "HEAD"
+foreground_color = "#800080"
+
+[patterns.options]
+pattern = "OPTIONS"
+foreground_color = "#C0C0C0"
+
+[patterns.status_200]
+pattern = " 200 "
+foreground_color = "#00FF00"
+
+[patterns.status_3xx]
+pattern = " 3[0-9]{2} "
+foreground_color = "#FFA500"
+
+[patterns.status_4xx]
+pattern = " 4[0-9]{2} "
+foreground_color = "#FF0000"
+
+[patterns.status_5xx]
+pattern = " 5[0-9]{2} "
+foreground_color = "#800080"
+attributes = "bold"

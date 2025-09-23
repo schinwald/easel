@@ -1,0 +1,41 @@
+[patterns.severe]
+pattern = "SEVERE"
+foreground_color = "#FF0000"
+attributes = "bold"
+
+[patterns.warning]
+pattern = "WARNING"
+foreground_color = "#FFA500"
+
+[patterns.info]
+pattern = "INFO"
+foreground_color = "#00FF00"
+
+[patterns.config]
+pattern = "CONFIG"
+foreground_color = "#0000FF"
+
+[patterns.fine]
+pattern = "FINE"
+foreground_color = "#808080"
+
+[patterns.finer]
+pattern = "FINER"
+foreground_color = "#C0C0C0"
+
+[patterns.finest]
+pattern = "FINEST"
+foreground_color = "#FFC0CB"
+
+[patterns.exception]
+pattern = "Exception|Error"
+foreground_color = "#FF0000"
+attributes = "bold"
+
+[patterns.stack]
+pattern = "at .*"
+foreground_color = "#808080"
+
+[patterns.http_method]
+pattern = "(GET|POST|PUT|DELETE|HEAD|OPTIONS)"
+foreground_color = "#008000"

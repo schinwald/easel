@@ -1,0 +1,41 @@
+[patterns.critical]
+pattern = "CRITICAL"
+foreground_color = "#FF0000"
+attributes = "bold,blink"
+
+[patterns.error]
+pattern = "ERROR"
+foreground_color = "#FF0000"
+attributes = "bold"
+
+[patterns.warning]
+pattern = "WARNING"
+foreground_color = "#FFA500"
+
+[patterns.info]
+pattern = "INFO"
+foreground_color = "#00FF00"
+
+[patterns.debug]
+pattern = "DEBUG"
+foreground_color = "#808080"
+
+[patterns.trace]
+pattern = "TRACE"
+foreground_color = "#C0C0C0"
+
+[patterns.method]
+pattern = "(GET|POST|PUT|DELETE|PATCH|OPTIONS|HEAD)"
+foreground_color = "#0000FF"
+
+[patterns.status_200]
+pattern = "200"
+foreground_color = "#00FF00"
+
+[patterns.status_4xx]
+pattern = "4[0-9]{2}"
+foreground_color = "#FFA500"
+
+[patterns.status_5xx]
+pattern = "5[0-9]{2}"
+foreground_color = "#FF0000"

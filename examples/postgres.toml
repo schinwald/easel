@@ -1,0 +1,33 @@
+[patterns.fatal]
+pattern = "FATAL"
+foreground_color = "#FF0000"
+attributes = "bold,blink"
+
+[patterns.error]
+pattern = "ERROR"
+foreground_color = "#FF0000"
+attributes = "bold"
+
+[patterns.warn]
+pattern = "WARN"
+foreground_color = "#FFA500"
+
+[patterns.info]
+pattern = "INFO"
+foreground_color = "#00FF00"
+
+[patterns.debug]
+pattern = "DEBUG"
+foreground_color = "#808080"
+
+[patterns.log]
+pattern = "LOG"
+foreground_color = "#0000FF"
+
+[patterns.statement]
+pattern = "STATEMENT"
+foreground_color = "#800080"
+
+[patterns.query]
+pattern = "SELECT|INSERT|UPDATE|DELETE"
+foreground_color = "#008000"
