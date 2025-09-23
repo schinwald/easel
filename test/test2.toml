@@ -1,7 +1,0 @@
-[patterns.email_regex]
-pattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
-color = "#FF0000"
-
-[patterns.phone_regex]
-pattern = "^\\+?1?[-.\\s]?\\(?[0-9]{3}\\)?[-.\\s]?[0-9]{3}[-.\\s]?[0-9]{4}$"
-color = "#00FF00"
