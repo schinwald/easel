@@ -43,8 +43,21 @@ attributes = "bold,italic"        # Optional: comma-separated list
 
 ### Supported Colors
 
-Named colors: black, red, green, yellow, blue, magenta, cyan, white
-Hex colors: #RRGGBB format
+Preset colors
+- black
+- red
+- green
+- yellow
+- blue
+- magenta
+- cyan
+- white
+
+> [!note]
+> Preset colors will match your terminal's color scheme and is the preferred way to use colors.
+
+Custom colors
+- hex (#FF0000)
 
 ### Supported Attributes
 
