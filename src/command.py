@@ -1,26 +1,22 @@
 import sys
-import argparse
+import typer
 
 from .loader import load_config
 from .processor import process_line
 
 
-def command():
-    parser = argparse.ArgumentParser(description="Terminal text highlighter")
-    parser.add_argument("--config", required=True, help="Path to TOML config file")
-    args = parser.parse_args()
-
+def command(config: str = typer.Option(help="Path to TOML config file")):
     try:
-        config = load_config(args.config)
+        config_data = load_config(config)
     except ValueError as error:
-        print(error)
-        sys.exit(1)
+        typer.echo(error, err=True)
+        raise typer.Exit(1)
 
     # Process input lines
     while True:
         line = sys.stdin.readline()
         if not line:
             break
-        processed = process_line(config, line.rstrip("\n"))
-        print(processed)
+        processed = process_line(config_data, line.rstrip("\n"))
+        typer.echo(processed)
 
