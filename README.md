@@ -153,6 +153,8 @@ Key design principles:
 - [ ] **Performance Optimizations**: Further reduce processing latency for high-throughput logs
 - [ ] **Advanced Pattern Matching**: Support for lookbehinds/lookaheads, named groups
 - [ ] **Theme System**: Predefined color schemes for different use cases
+- [ ] **Colors**: Define more preset colors (brighter ones)
+- [ ] **Color Formats**: Support for rgb color formats
 - [ ] **Multi-format Support**: JSON, YAML, XML configs in addition to TOML
 - [ ] **Multi-line Formatting**: Support regex on multiple lines
 
