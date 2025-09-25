@@ -20,14 +20,8 @@ case $OS in
         ;;
 esac
 
-# Get latest release asset URL
-API_URL="https://api.github.com/repos/$REPO/releases/latest"
-ASSET_URL=$(curl -s $API_URL | grep -A 5 "\"name\": \"$ASSET_NAME\"" | grep "browser_download_url" | sed 's/.*"browser_download_url": "\([^"]*\)".*/\1/')
-
-if [ -z "$ASSET_URL" ]; then
-    echo "Error: Could not find asset $ASSET_NAME in latest release."
-    exit 1
-fi
+# Construct latest release asset URL
+ASSET_URL="https://github.com/$REPO/releases/latest/download/$ASSET_NAME"
 
 echo "Downloading easel from $ASSET_URL..."
 curl -L -o /tmp/easel $ASSET_URL
