@@ -1,5 +1,34 @@
+import sys
 import typer
-from src.command import command
+
+from src.loader import load_config
+from src.processor import process_line
+
+app = typer.Typer()
+
+@app.callback(invoke_without_command=True)
+def main(config: str = typer.Option(None, help="Path to TOML config file"), version: bool = typer.Option(False, "--version", help="Show version")):
+    if version:
+        typer.echo("0.2.0")
+        raise typer.Exit()
+
+    if config is None:
+        typer.echo("Error: --config is required", err=True)
+        raise typer.Exit(1)
+
+    try:
+        config_data = load_config(config)
+    except ValueError as error:
+        typer.echo(error, err=True)
+        raise typer.Exit(1)
+
+    # Process input lines
+    while True:
+        line = sys.stdin.readline()
+        if not line:
+            break
+        processed = process_line(config_data, line.rstrip("\n"))
+        typer.echo(processed)
 
 if __name__ == "__main__":
-    typer.run(command)
+    app()
