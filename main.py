@@ -1,5 +1,4 @@
-import typer
-from src.command import command
+from src.command import app
 
 if __name__ == "__main__":
-    typer.run(command)
+    app()

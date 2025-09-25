@@ -1,19 +1,34 @@
 import sys
+from typing import Annotated
 import typer
 
-from .loader import load_config
-from .processor import process_line
+from src.loader import load_config
+from src.processor import process_line
+
+app = typer.Typer()
 
 
-def command(config: str = typer.Option(None, help="Path to TOML config file"), version: bool = typer.Option(False, "--version", help="Show version")):
+def get_version(version: bool | None):
     if version:
         typer.echo("0.2.0")
         raise typer.Exit()
 
-    if config is None:
-        typer.echo("Error: --config is required", err=True)
-        raise typer.Exit(1)
 
+@app.callback(invoke_without_command=True)
+def main(
+    config: Annotated[
+        str,
+        typer.Option(
+            "--config", "-c", help="path to toml config file", show_envvar=False
+        ),
+    ],
+    _version: Annotated[
+        bool | None,
+        typer.Option(
+            "--version", help="display the version of easel", callback=get_version
+        ),
+    ] = None,
+):
     try:
         config_data = load_config(config)
     except ValueError as error:
