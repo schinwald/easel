@@ -14,4 +14,18 @@ dependencies = [
 [dependency-groups]
 dev = [
     "pyinstaller>=6.16.0",
+    "bump-my-version>=0.20.0",
 ]
+
+[tool.bumpversion]
+current_version = "0.1.0"
+parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
+serialize = ["{major}.{minor}.{patch}"]
+commit = true
+tag = true
+message = "chore: release v{new_version}"
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = "version = \"{current_version}\""
+replace = "version = \"{new_version}\""
