@@ -17,16 +17,16 @@ A powerful, flexible terminal text highlighter that applies ANSI escape codes to
 
 ## 📦 Installation
 
-### Prerequisites
-
-- uv for package management
+```bash
+curl -fsSL https://raw.githubusercontent.com/schinwald/easel/development/install.sh | bash
+```
 
 ## 🚀 Usage
 
 Pipe text through Easel with a configuration file:
 
 ```bash
-cat input.txt | uv run main.py --config config.toml
+cat input.txt | easel -c config.toml
 ```
 
 ## ⚙️ Configuration Format
@@ -91,7 +91,7 @@ The `examples/` directory contains sample configurations for popular tools:
 
 ### Prerequisites
 
-- uv (dependency management)
+- `uv` for package management
 
 ### Setup
 
