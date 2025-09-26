@@ -4,13 +4,14 @@ import typer
 
 from src.loader import load_config
 from src.processor import process_line
+from src.version import __version__
 
 app = typer.Typer()
 
 
 def get_version(version: bool | None):
     if version:
-        typer.echo("0.2.0")
+        typer.echo(__version__)
         raise typer.Exit()
 
 
